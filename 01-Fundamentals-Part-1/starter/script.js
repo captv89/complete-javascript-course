@@ -16,3 +16,12 @@ console.log("I am", firstName, lastName);
 console.log("Country: ", country);
 console.log("Continent: ", continent);
 console.log("Population: ", population);
+
+// Lecture: Data Types
+const isIsland = false;
+let language;
+
+console.log("Type of isIsland is", typeof isIsland);
+console.log("Type of population is", typeof population);
+console.log("Type of country is", typeof country);
+console.log("Type of language is", typeof language);
