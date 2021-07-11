@@ -31,3 +31,22 @@ console.log("Type of language is", typeof language);
 const givenName = 'CaptV';
 language = 'Malayalam';
 // givenName = 'Majja'; // Error Statement
+
+// Lecture: Basic Operator
+population = 13664000000;
+let split1 = population / 2;
+let split2 = population - split1;
+
+population++;
+
+console.log(population, split1, split2);
+
+let finpop = 600000000;
+let avgpop = 3300000000;
+
+console.log("Is my country population grater than Finland?", population > finpop);
+
+console.log("Does your country have less people than the average country?", population < avgpop);
+
+const description = 'Portugal is in Europe, and its 11 million people speak portuguese';
+console.log(description);
