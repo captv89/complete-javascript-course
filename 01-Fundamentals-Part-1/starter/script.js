@@ -25,3 +25,9 @@ console.log("Type of isIsland is", typeof isIsland);
 console.log("Type of population is", typeof population);
 console.log("Type of country is", typeof country);
 console.log("Type of language is", typeof language);
+
+
+// Lecture: let, cosnt and var
+const givenName = 'CaptV';
+language = 'Malayalam';
+// givenName = 'Majja'; // Error Statement
