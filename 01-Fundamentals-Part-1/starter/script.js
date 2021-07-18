@@ -1,52 +1,90 @@
-let js = 'Amazing';
-// if (js === 'Amazing') alert('JS is FUN!');
-console.log(40 + 20 - 30 * 12 / 23);
+// let js = 'Amazing';
+// // if (js === 'Amazing') alert('JS is FUN!');
+// console.log(40 + 20 - 30 * 12 / 23);
 
-// Lecture: Values and Variables
-let firstName = "John";
-let lastName = "Doe";
+// // Lecture: Values and Variables
+// let firstName = "John";
+// let lastName = "Doe";
 
-var country, continent, population;
+// var country, continent, population;
 
-country = 'India';
-continent = 'Asia';
-population = '136.64 crores';
+// country = 'India';
+// continent = 'Asia';
+// population = '136.64 crores';
 
-console.log("I am", firstName, lastName);
-console.log("Country: ", country);
-console.log("Continent: ", continent);
-console.log("Population: ", population);
+// console.log("I am", firstName, lastName);
+// console.log("Country: ", country);
+// console.log("Continent: ", continent);
+// console.log("Population: ", population);
 
-// Lecture: Data Types
-const isIsland = false;
-let language;
+// // Lecture: Data Types
+// const isIsland = false;
+// let language;
 
-console.log("Type of isIsland is", typeof isIsland);
-console.log("Type of population is", typeof population);
-console.log("Type of country is", typeof country);
-console.log("Type of language is", typeof language);
+// console.log("Type of isIsland is", typeof isIsland);
+// console.log("Type of population is", typeof population);
+// console.log("Type of country is", typeof country);
+// console.log("Type of language is", typeof language);
 
 
-// Lecture: let, cosnt and var
-const givenName = 'CaptV';
-language = 'Malayalam';
-// givenName = 'Majja'; // Error Statement
+// // Lecture: let, cosnt and var
+// const givenName = 'CaptV';
+// language = 'Malayalam';
+// // givenName = 'Majja'; // Error Statement
 
-// Lecture: Basic Operator
-population = 13664000000;
-let split1 = population / 2;
-let split2 = population - split1;
+// // Lecture: Basic Operator
+// population = 13664000000;
+// let split1 = population / 2;
+// let split2 = population - split1;
+// population++;
+// console.log(population, split1, split2);
 
-population++;
+// let finpop = 600000000;
+// let avgpop = 3300000000;
 
-console.log(population, split1, split2);
+// console.log("Is my country population grater than Finland?", population > finpop);
+// console.log("Does your country have less people than the average country?", population < avgpop);
 
-let finpop = 600000000;
-let avgpop = 3300000000;
+// const description = 'Portugal is in Europe, and its 11 million people speak portuguese';
+// console.log(description);
 
-console.log("Is my country population grater than Finland?", population > finpop);
+// Coding Challenge 1: BMI Calculation
+// Test Data 1
+// For Mark
+let mWeight = 78;
+let mHeight = 1.69;
+mBMI = mWeight / (mHeight ** 2);
+console.log("Mark's BMI: ", mBMI)
 
-console.log("Does your country have less people than the average country?", population < avgpop);
+// For Jhon
+let jWeight = 92;
+let jHeight = 1.95;
+jBMI = jWeight / (jHeight ** 2);
+console.log("Jhon's BMI: ", jBMI)
 
-const description = 'Portugal is in Europe, and its 11 million people speak portuguese';
-console.log(description);
+// Check who has more BMI
+if (mBMI > jBMI) {
+    console.log("Mark has higher BMI than Jhon")
+} else {
+    console.log("Jhon has higher BMI than Mark")
+}
+
+// Test Data 2
+// For Mark
+mWeight = 95;
+mHeight = 1.88;
+mBMI = mWeight / (mHeight ** 2);
+console.log("Mark's BMI: ", mBMI)
+
+// For Jhon
+jWeight = 85;
+jHeight = 1.76;
+jBMI = jWeight / (jHeight ** 2);
+console.log("Jhon's BMI: ", jBMI)
+
+// Check who has more BMI
+if (mBMI > jBMI) {
+    console.log("Mark has higher BMI than Jhon")
+} else {
+    console.log("Jhon has higher BMI than Mark")
+}
