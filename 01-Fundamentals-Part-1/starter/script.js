@@ -48,43 +48,57 @@
 // const description = 'Portugal is in Europe, and its 11 million people speak portuguese';
 // console.log(description);
 
-// Coding Challenge 1: BMI Calculation
-// Test Data 1
-// For Mark
-let mWeight = 78;
-let mHeight = 1.69;
-mBMI = mWeight / (mHeight ** 2);
-console.log("Mark's BMI: ", mBMI)
+// // Coding Challenge 1: BMI Calculation
+// // Test Data 1
+// // For Mark
+// let mWeight = 78;
+// let mHeight = 1.69;
+// mBMI = mWeight / (mHeight ** 2);
+// console.log("Mark's BMI: ", mBMI)
 
-// For Jhon
-let jWeight = 92;
-let jHeight = 1.95;
-jBMI = jWeight / (jHeight ** 2);
-console.log("Jhon's BMI: ", jBMI)
+// // For Jhon
+// let jWeight = 92;
+// let jHeight = 1.95;
+// jBMI = jWeight / (jHeight ** 2);
+// console.log("Jhon's BMI: ", jBMI)
 
-// Check who has more BMI
-if (mBMI > jBMI) {
-    console.log("Mark has higher BMI than Jhon")
-} else {
-    console.log("Jhon has higher BMI than Mark")
-}
+// // Check who has more BMI
+// if (mBMI > jBMI) {
+//     console.log("Mark has higher BMI than Jhon")
+// } else {
+//     console.log("Jhon has higher BMI than Mark")
+// }
 
-// Test Data 2
-// For Mark
-mWeight = 95;
-mHeight = 1.88;
-mBMI = mWeight / (mHeight ** 2);
-console.log("Mark's BMI: ", mBMI)
+// // Test Data 2
+// // For Mark
+// mWeight = 95;
+// mHeight = 1.88;
+// mBMI = mWeight / (mHeight ** 2);
+// console.log("Mark's BMI: ", mBMI)
 
-// For Jhon
-jWeight = 85;
-jHeight = 1.76;
-jBMI = jWeight / (jHeight ** 2);
-console.log("Jhon's BMI: ", jBMI)
+// // For Jhon
+// jWeight = 85;
+// jHeight = 1.76;
+// jBMI = jWeight / (jHeight ** 2);
+// console.log("Jhon's BMI: ", jBMI)
 
-// Check who has more BMI
-if (mBMI > jBMI) {
-    console.log("Mark has higher BMI than Jhon")
-} else {
-    console.log("Jhon has higher BMI than Mark")
-}
+// // Check who has more BMI
+// if (mBMI > jBMI) {
+//     console.log("Mark has higher BMI than Jhon")
+// } else {
+//     console.log("Jhon has higher BMI than Mark")
+// }
+
+// String and Template Literals - Back Ticks
+const firstName = 'Vishnu';
+const job = 'Sailor';
+
+const yearOfBirth = '1990';
+const thisYear = '2050';
+
+let interst = 'Love Learning';
+
+const me = `I am ${firstName}, ${job} by profession. I am ${thisYear - yearOfBirth} years old.
+I ${interst} !!!`;
+
+console.log(me);
