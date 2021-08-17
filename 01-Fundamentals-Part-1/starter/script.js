@@ -73,32 +73,94 @@
 // // For Mark
 // mWeight = 95;
 // mHeight = 1.88;
-// mBMI = mWeight / (mHeight ** 2);
+// mBMI = (mWeight / (mHeight ** 2)).toFixed(2);
 // console.log("Mark's BMI: ", mBMI)
 
 // // For Jhon
 // jWeight = 85;
 // jHeight = 1.76;
-// jBMI = jWeight / (jHeight ** 2);
+// jBMI = (jWeight / (jHeight ** 2)).toFixed(2);
 // console.log("Jhon's BMI: ", jBMI)
 
 // // Check who has more BMI
 // if (mBMI > jBMI) {
-//     console.log("Mark has higher BMI than Jhon")
+//     console.log(`Mark has higher ${mBMI} BMI than Jhon's ${jBMI}`)
 // } else {
-//     console.log("Jhon has higher BMI than Mark")
+//     console.log(`Jhon has higher ${jBMI} BMI than Mark's ${mBMI}`)
 // }
 
 // String and Template Literals - Back Ticks
-const firstName = 'Vishnu';
-const job = 'Sailor';
+// const firstName = 'Vishnu';
+// const job = 'Sailor';
 
-const yearOfBirth = '1990';
-const thisYear = '2050';
+// const yearOfBirth = '1990';
+// const thisYear = '2050';
 
-let interst = 'Love Learning';
+// let interst = 'Love Learning';
 
-const me = `I am ${firstName}, ${job} by profession. I am ${thisYear - yearOfBirth} years old.
-I ${interst} !!!`;
+// const me = `I am ${firstName}, ${job} by profession. I am ${thisYear - yearOfBirth} years old.
+// I ${interst} !!!`;
 
-console.log(me);
+// console.log(me);
+
+// // AND operator
+
+// console.log(true && true && false)
+
+// //OR Operator
+
+// console.log(true || false || false)
+
+// Coding Challenge 3:
+// 1. Calculate avg score for each team
+// 2. Compare score and declare a winer or draw
+// Bonus 1 Team should have a minimum score of 100 to win
+// Bonus 2 For draw also min score to be more than 100
+
+// Data set 1: 
+// Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
+const dScore = [96, 108, 89];
+const kScore = [88, 91, 110];
+
+var dSum = dScore.reduce((a, b) => a + b, 0);
+var kSum = kScore.reduce((a, b) => a + b, 0);
+
+var dAvg = (dSum / dScore.length).toFixed(2);
+var kAvg = (kSum / kScore.length).toFixed(2);
+
+console.log(`Average score of Dolphins is ${dAvg}`)
+console.log(`Average score of Koalas is ${kAvg}`)
+
+var disqualify = 0
+
+function checkMin(num) {
+    if (num < 100) {
+        console.log('No');
+    }
+}
+var dQualify
+var kQualify
+
+dScore.forEach(function (elem) {
+    if (elem < 100) {
+        dQualify = false;
+    }
+})
+console.log(dQualify)
+
+kScore.forEach(function (elem) {
+    if (elem < 100) {
+        kQualify = false;
+    }
+})
+console.log(kQualify)
+
+if (dAvg > kAvg && dQualify == true) {
+    console.log(`Winner is Dolphins`)
+} else if (dAvg == kAvg) {
+    console.log(`It's a draw`)
+} else if (kAvg > dAvg && kQualify == true) {
+    console.log(`Winner is Koalas`)
+} else {
+    console.log(`No winner`)
+}
